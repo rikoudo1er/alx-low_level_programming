@@ -11,7 +11,6 @@
 int main(void)
 {
 	int i;
-	char br = '\n';
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -19,7 +18,7 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	putchar(br);
+	putchar('\n');
 
 	return (0);
 }
