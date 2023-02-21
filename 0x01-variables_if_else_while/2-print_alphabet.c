@@ -12,10 +12,10 @@ int main(void)
 {	char letter = 'a';
 	while (letter <= 'z')
 	{
-		printf("%c", letter);
+		putchar(letter);
 		letter++;
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }

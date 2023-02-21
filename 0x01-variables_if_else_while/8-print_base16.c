@@ -11,12 +11,17 @@
 int main(void)
 {
 	int i;
+	char br = '\n';
 
 	for (i = 0; i < 10; i++)
 	{
 		putchar('0' + i);
 	}
-	putchar('\n');
+	for (i = 0; i < 6; i++)
+	{
+		putchar('a' + i);
+	}
+	putchar(br);
 
 	return (0);
 }

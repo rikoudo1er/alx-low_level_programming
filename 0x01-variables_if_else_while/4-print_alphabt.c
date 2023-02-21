@@ -24,7 +24,7 @@ int main(void)
 	putchar(letter);
 	letter++;
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }

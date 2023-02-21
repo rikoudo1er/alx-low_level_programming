@@ -22,7 +22,7 @@ int main(void)
 		putchar(letterUper);
 		letterUper++;
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
