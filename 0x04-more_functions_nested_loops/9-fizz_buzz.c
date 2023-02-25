@@ -16,23 +16,23 @@ int main(void)
 		if (((i % 3) == 0) & ((i % 5) == 0))
 		{
 			printf("FizzBuzz ");
-			i++;
 		}
 		else if ((i % 3) == 0)
 		{
 			printf("Fizz ");
-			i++;
 		}
 		else if ((i % 5) == 0)
 		{
 			printf("Buzz ");
-			i++;
-		}
-		if (i == 100)
-		{
-			printf("Buzz");
-				break;
-		}
+
+			if (i == 100)
+			{
+				printf("Buzz");
+
+			}
+			else
+				printf("Buzz ");
+		}	
 
 		printf("%d ", i);
 	}
