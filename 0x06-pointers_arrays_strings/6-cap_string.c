@@ -1,12 +1,10 @@
 #include "main.h"
-#include <ctype.h>
-#include <stdio.h>
 
 /**
  * cap_string- changes all lowercase letters of a string to uppercase.
- * @c: string.
+ * @str: string.
  * Return:{The value returned is that of the converted letter,
- * or c if the conversion was not possible.}
+ * or @str if the conversion was not possible.}
  */
 char *cap_string(char *str)
 {
@@ -21,7 +19,7 @@ char *cap_string(char *str)
 		len++;
 	}
 
-	for (;str[len] != '\0'; len++)
+	for (; str[len] != '\0'; len++)
 	{
 
 		for (i = 0; i < j - 1; i++)
