@@ -8,27 +8,22 @@
 
 char *rot13(char *str)
 {
-	char *upper_rot13 = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char *low_rot13 = "nopqrstuvwxyzabcdefghijklm";
-	char *low_alph = "abcdefghijklmnopqrstuvwxyz";
-	char *upper_alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+	char *rot13 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *alph  = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i, len = 0;
 
 
 	for (; str[len] != '\0'; len++)
 	{
-		for (i = 0; i < 26; i++)
+		for (i = 0; i < 52; i++)
 		{
-			if (str[len] == low_alph[i])
+			if (str[len] == alph[i])
 			{
-				str[len] = low_rot13[i];
+				str[len] = rot13[i];
 				break;
 			}
-			else if (str[len] == upper_alph[i])
-			{
-				str[len] = upper_rot13[i];
-				break;
-			}
+
 		}
 	}
 	return (str);
