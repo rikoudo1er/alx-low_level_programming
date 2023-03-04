@@ -10,20 +10,19 @@
 void reverse_array(int *a, int n)
 {
 	int i, temp;
-       int *start = a, *end = a;
+	int *start = a, *end = a;
 
-        for (i = 0; i < n - 1; i++)
-                end++;
+	for (i = 0; i < n - 1; i++)
+		end++;
 
-        for (i = 0; i < n / 2; i++)
-        {
-                temp = *end;
-                *end = *start;
-                *start = temp;
-
-                end--;
-                start++;
-        }
+	for (i = 0; i < n / 2; i++)
+	{
+		temp = *end;
+		*end = *start;
+		*start = temp;
+		end--;
+		start++;
+	}
 
 
 
