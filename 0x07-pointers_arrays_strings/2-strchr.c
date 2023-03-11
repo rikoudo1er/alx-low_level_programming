@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 
 /**
@@ -21,9 +20,9 @@ char *_strchr(char *s, char c)
 			return (s);
 		}
 
-		++s;
+		s++;
 	}
 
-	return (NULL);
+	return (0);
 
 }
