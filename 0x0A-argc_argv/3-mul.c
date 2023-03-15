@@ -13,19 +13,20 @@ int main(int argc, char *argv[])
 
 	int sum, arg1, arg2;
 
-	if (argc > 1)
+	if (argc == 3)
 	{
 		arg1 = atoi(argv[1]);
 		arg2 = atoi(argv[2]);
 		sum = arg1 * arg2;
 
 		printf("%d\n", sum);
-		return (EXIT_SUCCESS);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
+	return (EXIT_SUCCESS);
+
 
 }
