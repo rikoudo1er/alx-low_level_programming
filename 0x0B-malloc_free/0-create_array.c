@@ -7,7 +7,7 @@
  * it with a specific char.
  * @size: size of array.
  * @c: charactere.
- * return :a pointer to the array, or NULL if it fails.
+ * Return:a pointer to the array, or NULL if it fails.
  */
 
 char *create_array(unsigned int size, char c)
