@@ -1,6 +1,5 @@
-#include "dog.h"
-#include <stddef.h>
 #include <stdlib.h>
+#include "dog.h"
 
 /**
  * _strcpy - copy the string.
@@ -16,16 +15,17 @@ char *_strcpy(char *src)
 
 	if (src == NULL)
 		return (NULL);
-	for (; src[len] != '\0'; len++)
 
+	for (; src[len] != '\0'; len++)
+		;
 	dest = malloc(sizeof(char) * (len + 1));
 	if (dest == NULL)
 		return (NULL);
 
 	for (; src[i] != '\0'; i++)
 		dest[i] = src[i];
-	dest[i] = '\0';
 
+	dest[i] = '\0';
 	return (dest);
 }
 
@@ -42,6 +42,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new = NULL;
 	char *new_name = NULL, *new_owner = NULL;
+
+	if (name == NULL || owner == NULL)
+		return (NULL);
 
 	new = malloc(sizeof(dog_t));
 
