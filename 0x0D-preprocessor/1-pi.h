@@ -1,0 +1,6 @@
+#ifndef __MACRO_PI__H
+#define __MACRO_PI__H
+
+#define PI 3.14159265359
+
+#endif
