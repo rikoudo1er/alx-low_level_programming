@@ -1,22 +1,6 @@
 #include "main.h"
 
 /**
- * _pow - return x powered y
- * @x : integer
- * @y : pow
- * Return: x power y
- */
-int _pow(int x, int y)
-{
-	int i, sol = 1;
-
-	for (i = 0; i < y; i++)
-		sol *= x;
-	return (sol);
-
-}
-
-/**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: pointing to a string of 0 and 1 chars
  * Return: the converted number, or 0 if
@@ -42,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; i < len; i++)
 	{
 		if (b[i] == '1')
-			res += _pow(2, (len - (i + 1)));
+			res += 1u << (len - (i + 1));
 
 	}
 	return (res);
